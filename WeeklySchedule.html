@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Coffee</title>
+</head>
+
+<body>
+<!-- Schedule -->
+    <table class="center">
+    <caption class="text-center">Hours of Operation</caption>
+    <tr class="row">
+        <th></th>
+        <th>Monday</th>
+        <th>Tueseday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+
+    <tr class="row">
+        <th>Morning</th>
+        <td colspan="5" rowspan="2" style="background-color: yellow;" >Class</td>
+        <td style="background-color: cornflowerblue;">Read</td>
+        <td style="background-color: chartreuse;">Sleep</td> 
+    </tr>    
+
+    <tr class="row">
+        <th>Afternoon</th>
+        <td style="background-color: coral;">Work</td>
+        <td style="background-color: coral;">Work</td>
+    </tr>
+
+    <tr class="row">
+        <th>Evening</th>
+        <td colspan="2" style="background-color:teal;">Homework</td>
+        <td colspan="2" style="background-color: tomato;">Hang with friends</td>
+        <td colspan="5" style="background-color: aqua;">Rest</td>
+    </tr>
+    </table>
+
+  <form>
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" type="text" placeholder="First Name">
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name="lastName" type="text" placeholder="Last Name" ></input>
+
+    <div>
+      <h3>Method of Contact</h3>
+      <input id="email" name="contact" type="radio" value="email">
+      <label for="email">Email</label>
+      <input id="phone" name="contact" type="radio" value="phone">
+      <label for="phone">Phone</label>
+    </div>
+      
+    <div>
+      <h3>Coffee</h3>
+      <input id="drip" name="coffee" type="checkbox" value="drip">
+      <label for="drip">Drip</label>
+      <input id="coldbrew" name="coffee" type="checkbox" value="coldbrew">
+      <label for="coldbrew">Cold Brew</label>
+      <input id="latte" name="coffee" type="checkbox" value="latte">
+      <label for="latte">Latte</label>
+      <input id="cappuccino" name="coffee" type="checkbox" value="cappuccino">
+      <label for="cappuccino">Cappuccino</label>
+      <input id="espresso" name="coffee" type="checkbox" value="espresso">
+      <label for="espresso">Drip</label>
+    </div>
+
+    <div>
+      <h3>Order Pick-up</h3>
+      <label for="pickup">Pick-up</label>
+      <select id="pickup">
+        <option value="walkIn">Walk in</option>
+        <option value="curbsidePickUp">Curbside Pick Up</option>
+      </select>
+    </div>
+     
+    <div>
+      <!-- <button> Submit Form</button> -->
+      <input type="submit" value="Place Order">
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
