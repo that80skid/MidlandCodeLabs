@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Coffee Shop</title>
+    <style>
+
+        
+    </style>
+</head>
+
+<body>
+<!-- Schedule -->
+    <table class="center">
+    <caption class="text-center">Hours of Operation</caption>
+    <tr class="row">
+        <th></th>
+        <th>Monday</th>
+        <th>Tueseday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+
+    <tr class="row">
+        <th>Morning</th>
+        <td colspan="5" rowspan="2" style="background-color: cornflowerblue;" >OPEN</td>
+        <td style="background-color: cornflowerblue;">OPEN</td>
+        <td style="background-color: chartreuse;">TO GO ONLY</td> 
+    </tr>    
+
+    <tr class="row">
+        <th>Afternoon</th>
+        <td style="background-color: cornflowerblue;">OPEN</td>
+        <td style="background-color: coral;">TO GO ONLY</td>
+    </tr>
+
+    <tr class="row">
+        <th>Evening</th>
+        <td colspan="2" style="background-color: cornflowerblue;">TO GO ONLY</td>
+        <td colspan="2" style="background-color: cornflowerblue;">OPEN</td>
+        <td colspan="5" style="background-color: aqua;">CLOSED</td>
+    </tr>
+    </table>
+
+  <form>
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" type="text" placeholder="First Name">
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name="lastName" type="text" placeholder="Last Name" ></input>
+
+    <div>
+      <h3>Method of Contact</h3>
+      <input id="email" name="contact" type="radio" value="email">
+      <label for="email">Email</label>
+      <input id="phone" name="contact" type="radio" value="phone">
+      <label for="phone">Phone</label>
+      <input id="text" name="contact" type="radio" value="text">
+      <label for="text">Text</label>
+    </div>
+    
+    <div>
+    <fieldset>
+        <legend>Coffee:</legend>
+            <input type="radio" id="coffeeChoice1"
+                   name="coffee" value="drip">
+            <label for="coffeeChoice1">Drip</label>
+
+            <input type="radio" id="coffeeChoice2"
+                   name="coffee" value="coldbrew">
+            <label for="coffeeChoice2">Cold Brew</label>
+
+            <input type="radio" id="coffeeChoice3" checked="checked"
+                   name="coffee" value="Latte" >
+            <label for="coffeeChoice3">Latte</label>
+
+            <input type="radio" id="coffeeChoice4"
+                   name="coffee" value="cappuccino" >
+            <label for="coffeeChoice4">Cappuccino</label>
+
+            <input type="radio" id="coffeeChoice5"
+            name="coffee" value="espresso">
+     <label for="coffeeChoice5">Espresso</label>
+    </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Add:</legend>
+            <input type="checkbox" id="addChoice1"
+                   name="add" value="milk">
+            <label for="addChoice1">Milk</label>
+
+            <input type="checkbox" id="addChoice2"
+                   name="add" value="sugar">
+            <label for="addChoice2">Sugar</label>
+
+            <input type="checkbox" id="addChoice3"
+                   name="add" value="extrashot">
+            <label for="addChoice3">Extra Shot</label>
+
+            <input type="checkbox" id="addChoice3"
+                    name="add" value="decaf">
+            <label for="addChoice3">Decaf</label>
+
+            <input type="checkbox" id="addChoice4"
+                name="add" value="iced">
+            <label for="addChoice4">Iced</label>
+
+            <input type="checkbox" id="addChoice5"
+                name="add" value="anExtraShotOfEspresso">
+            <label for="addChoice5">An Extra Shot of Espresso</label>
+        </fieldset>
+    </div>
+
+    <div>
+        <label for="textarea">Additional comments</label>
+            <textarea id="textarea" class="container"></textarea>
+    <div>
+        
+      <h3>Order Pick-up</h3>
+      <label for="pickup">Pick-up</label>
+      <select id="pickup">
+        <option value="walkIn">Walk in</option>
+        <option value="curbsidePickUp">Curbside Pick Up</option>
+      </select>
+    </div>
+     
+    <div>
+      <!-- <button> Submit Form</button> -->
+      <input type="submit" value="Place Order">
+    </div>
+</form>
